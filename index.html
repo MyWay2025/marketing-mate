@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Mate | Your Business, Your Mate</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; }
+    header { background: linear-gradient(to right, #4a00e0, #8e2de2); color: white; text-align: center; padding: 4rem 2rem; }
+    header h1 { margin: 0; font-size: 3rem; }
+    header p { font-size: 1.2rem; margin: 1rem 0; }
+    header a { background: #ffcc00; color: #000; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: bold; }
+
+    section { padding: 4rem 2rem; max-width: 960px; margin: auto; }
+    .features, .pricing { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+    .card { background: #f9f9f9; padding: 2rem; border-radius: 10px; flex: 1 1 250px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+    footer { background: #222; color: white; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    form input, form textarea, form button {
+      width: 100%; padding: 1rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 6px;
+    }
+    form button {
+      background: #8e2de2; color: white; font-weight: bold; border: none; cursor: pointer;
+    }
+
+    @media(max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .features, .pricing { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marketing Mate</h1>
+  <p>Your Business, Your Mate</p>
+  <a href="#contact">무료 상담 신청</a>
+</header>
+
+<section>
+  <h2>우리의 서비스</h2>
+  <div class="features">
+    <div class="card">
+      <h3>웹사이트 제작</h3>
+      <p>저가형 기본 페이지부터 반응형 맞춤형 디자인까지.</p>
+    </div>
+    <div class="card">
+      <h3>SNS 패키지</h3>
+      <p>인스타그램, 페이스북 계정 오픈 및 콘텐츠 기획/제작</p>
+    </div>
+    <div class="card">
+      <h3>영상 옵션</h3>
+      <p>홍보 영상 제작은 선택 사항으로 추가 가능</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>가격 안내</h2>
+  <div class="pricing">
+    <div class="card">
+      <h3>기본형</h3>
+      <p>✔ 단일 페이지 웹사이트<br/>✔ SNS 개설<br/>✔ 기본 콘텐츠 디자인</p>
+      <p><strong>$299</strong></p>
+    </div>
+    <div class="card">
+      <h3>프리미엄</h3>
+      <p>✔ 다중 페이지<br/>✔ SNS 기획+관리<br/>✔ 영상 콘텐츠 옵션 포함</p>
+      <p><strong>$599</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>무료 상담 신청</h2>
+  <form>
+    <input type="text" placeholder="이름" required /><br/>
+    <input type="email" placeholder="이메일" required /><br/>
+    <textarea placeholder="문의내용을 남겨주세요" rows="5"></textarea><br/>
+    <button type="submit">보내기</button>
+  </form>
+</section>
+
+<footer>
+  📧 contact@marketingmate.au | 📍 Sydney, Australia<br/>
+  Instagram: @marketingmate
+</footer>
+
+</body>
+</html>
